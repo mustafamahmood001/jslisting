@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Beautiful Page</title>
+</head>
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+    <div class="menu">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" id="todo-tab" data-toggle="pill" href="#todo">To-Do List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="calculator-tab" data-toggle="pill" href="#calculator">Calculator</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="clock-tab" data-toggle="pill" href="#clock">Clock</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="calendar-tab" data-toggle="pill" href="#calendar">Day & Date</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content mt-3">
+        <div class="tab-pane fade show active" id="todo">
+            <h2>To-Do List</h2>
+            <div id="todo-list">
+                <ul id="tasks">
+                    <!-- Tasks will be dynamically added here -->
+                </ul>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="task-input" placeholder="New Task">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" id="add-task-btn">Add Task</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="calculator">
+            <h2>Calculator</h2>
+            <input type="text" id="calculator-display" class="form-control mb-2" readonly>
+            <div class="calculator-buttons">
+                <button class="btn btn-light btn-calc" value="7">7</button>
+                <button class="btn btn-light btn-calc" value="8">8</button>
+                <button class="btn btn-light btn-calc" value="9">9</button>
+                <button class="btn btn-light btn-calc" value="/">/</button>
+                <button class="btn btn-light btn-calc" value="4">4</button>
+                <button class="btn btn-light btn-calc" value="5">5</button>
+                <button class="btn btn-light btn-calc" value="6">6</button>
+                <button class="btn btn-light btn-calc" value="*">*</button>
+                <button class="btn btn-light btn-calc" value="1">1</button>
+                <button class="btn btn-light btn-calc" value="2">2</button>
+                <button class="btn btn-light btn-calc" value="3">3</button>
+                <button class="btn btn-light btn-calc" value="-">-</button>
+                <button class="btn btn-light btn-calc" value="0">0</button>
+                <button class="btn btn-light btn-calc" value=".">.</button>
+                <button class="btn btn-light btn-calc" id="btn-equal" value="=">=</button>
+                <button class="btn btn-light btn-calc" value="+">+</button>
+                <button class="btn btn-light btn-calc" id="btn-clear">C</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="clock">
+            <h2>Clock</h2>
+            <div id="clock-display" class="circular-clock"></div>
+        </div>
+        <div class="tab-pane fade" id="calendar">
+            <h2>Day & Date</h2>
+            <div id="calendar-display"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
