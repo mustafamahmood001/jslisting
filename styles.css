@@ -1,3 +1,5 @@
+@media (max-width: 767px) {
+
 body {
     background: url('file:///E:/Programs/XAMPP5.6/htdocs/js/OIP.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -51,4 +53,5 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
+}
 }
